@@ -1,10 +1,11 @@
 let bankBranchInstance = null; 
 
 class BankBranch {
-    constructor() {
-        if () {
-
+    constructor(branchInfo) {
+        if (bankBranchInstance === null) {
+            this.branchInfo = branchInfo;
+            bankBranchInstance = this;
         }
-        return
+        return bankBranchInstance;
     }
 }
